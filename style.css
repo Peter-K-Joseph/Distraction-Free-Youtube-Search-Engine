@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #303030;
+}
+
+body {
+    font-family: 'Abel', sans-serif;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container{
+    width: 80%;
+}
+
+.logo{
+    width: 30vh;
+    animation-name: welcome_animation;
+    animation-duration: .8s;
+    animation-direction: backwards;
+}
+
+.title{
+    color: azure; 
+    animation-name: title;
+    animation-duration: 2s;
+    animation-direction: backwards;
+}
+
+.input{
+    width: 100%;
+    height: 30px;
+    background-color: azure;
+    border-radius: 20px;
+    margin: 20px;
+    margin-left: 0px;
+    text-align: center;
+    font-weight: 400;  
+    font-size: larger;
+    font-family: 'Abel', sans-serif; 
+    animation-name: afteranime;
+    animation-duration: 2s;
+    animation-direction: backwards;
+}
+
+.search {
+    border: none;
+    background-color: aliceblue;
+    font-size: 15px;
+    padding: 5px;
+    text-emphasis: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    font-variant: small-caps; 
+    animation-name: afteranime;
+    animation-duration: 2s;
+    animation-direction: backwards;
+}
+
+@keyframes welcome_animation {
+    0%   {opacity: 0; width: 40%;}
+    100%  {opacity: 1;}
+}
+
+@keyframes title {
+    0%   {opacity: 0;}
+    100%  {opacity: 1;}
+}
+
+@keyframes afteranime {
+    0%   {opacity: 0;}
+    40%  {opacity: 0;}
+    100%  {opacity: 1;}
+}
