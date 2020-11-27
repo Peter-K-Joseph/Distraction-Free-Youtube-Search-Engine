@@ -1,3 +1,21 @@
 <?php
-include_once("index.html");
 ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Youtube Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+            <img class="logo" src="./youtube_logo.png">
+            <h1 class="title">Youtube Search</h1>
+            <br>
+            <input type="text" onchange="search()" class="input" id="Search" autofocus placeholder="Enter Search here">
+            <br>
+            <input type="button" onclick="search()" class="search" value="Search">    
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>
